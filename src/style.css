@@ -1,0 +1,144 @@
+body {
+	background: #c3cad8;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	letter-spacing: 1px;
+}
+
+.container {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.container__wrapper {
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.btn {
+	cursor: pointer;
+	border: none;
+	background: none;
+	font: inherit;
+	border-radius: 4px;
+	color: #fff;
+	padding: .8125em;
+    border: 1px solid transparent;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+	background: #08a652;
+	transition: .2s;
+}
+
+.btn:hover {
+	background: #089610;
+}
+
+.btn--secondary {
+	background: #3464e0;
+}
+
+.btn--secondary:hover {
+	background: #1f4fcc;
+}
+
+.card {
+	background: #fff;
+	border-radius: 4px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 200px);
+	min-height: 250px;
+	margin: auto;	
+	position: relative;
+	z-index: 2;
+}
+
+.card::after,
+.card::before {
+	content: '';
+	z-index: -1;
+	display: block;
+	position: absolute;
+	width: calc(100% - 60px);
+	height: calc(100% - 30px);
+	left: 50%;
+	transform: translate(-50%);
+	top: -30px;
+	background: rgba(255,255,255,.6);
+	border-radius: 4px;
+}
+
+.card::after {
+	top: -15px;
+	width: calc(100% - 30px);
+	background: rgba(255,255,255,.8);
+}
+
+.card__form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	row-gap: 20px;
+}
+
+.card__label {
+	width: 48%;
+	margin-bottom: 20px;
+}
+
+.card__label:last-of-type {
+	margin-bottom: 0;
+}
+
+.card__label-text {
+	display: block;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+
+.card__input {
+	border-radius: 4px;
+	border: 1px solid #c3cad8;
+	padding: 16px;
+	font-size: 18px; 
+	width: calc(100% - 26px);
+	transition: .2s;
+}
+
+.card__input:focus,
+.card__input:hover {
+	border-color: #3464E0;
+	box-shadow: 0 0 0 2px rgba(156, 186, 240, 0.5);
+	outline: none;
+}
+
+.card__input:invalid:not(:placeholder-shown) {
+	border-color: #E06364;
+	box-shadow: 0 0 0 2px rgba(224, 99, 100, 0.5);
+}
+
+.form__controls {
+	display: flex;
+	justify-content: space-between;
+	width: 48%;
+	gap: 20px;
+}
+
+  .form__url {
+    border-radius: 4px;
+    border: 1px solid #c3cad8;
+    padding: 12px;
+    font-size: 18px;
+    width: calc(100% - 26px);
+  }  
