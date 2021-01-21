@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if(response !== ''){
                         document.querySelector('.form__controls').innerHTML += `<a href="${response}" class="card__button  card__button--enter btn btn--secondary">Войти в конференцию</a>`;
                         document.querySelector('.card__form').innerHTML += `<div class = "form__url"><label for = "url"><h3>Ссылка для входа</h3></label>
-                                                                    <input required type = "text" value = "${response}" class = "form__url" id = "url"></div>`;
+                                                                    <input required type = "text" value = "${response}" class="card__input" id = "url"></div>`;
                     }
                     form.reset(); // очищаем поля формы 
                 })
